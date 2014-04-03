@@ -1,6 +1,6 @@
 # NAME
 
-Locale::Scope - It's new $module
+Locale::Scope - scope based [setlocale(3)](http://man.he.net/man3/setlocale)
 
 # SYNOPSIS
 
@@ -19,11 +19,24 @@ Locale::Scope - It's new $module
     }
     # hear LC_TIME locale is C!!
 
-
-
 # DESCRIPTION
 
-Locale::Scope is ...
+__THE SOFTWARE IS IT'S IN ALPHA QUALITY. IT MAY CHANGE THE API WITHOUT NOTICE.__
+
+Locale::Scope is scope based [setlocale(3)](http://man.he.net/man3/setlocale) for rollback locale at the end of a scope.
+
+# FUNCTION
+
+- $scope = locale\_scope($category, $locale);
+
+    Set the program's current locale.
+    It creates a new Locale::Scope object which rollbacks locale when its DESTROY method is called.
+
+        my $scope = locale_scope($category, $locale);
+
+        # or
+
+        my $scope = Locale::Scope->new($category, $locale);
 
 # LICENSE
 

@@ -17,7 +17,7 @@ sub new {
     return bless +{
         category => $category,
         before   => setlocale($category),
-        after    => setlocale($category, $locale) || die "failed to setlocale. locale: $locale",
+        current  => setlocale($category, $locale) || die "failed to setlocale. locale: $locale",
     } => $class;
 }
 
@@ -33,7 +33,7 @@ __END__
 
 =head1 NAME
 
-Locale::Scope - It's new $module
+Locale::Scope - scope based L<setlocale(3)>
 
 =head1 SYNOPSIS
 
@@ -55,7 +55,26 @@ Locale::Scope - It's new $module
 
 =head1 DESCRIPTION
 
-Locale::Scope is ...
+B<THE SOFTWARE IS IT'S IN ALPHA QUALITY. IT MAY CHANGE THE API WITHOUT NOTICE.>
+
+Locale::Scope is scope based L<setlocale(3)> for rollback locale at the end of a scope.
+
+=head1 FUNCTION
+
+=over
+
+=item $scope = locale_scope($category, $locale);
+
+Set the program's current locale.
+It creates a new Locale::Scope object which rollbacks locale when its DESTROY method is called.
+
+    my $scope = locale_scope($category, $locale);
+
+    # or
+
+    my $scope = Locale::Scope->new($category, $locale);
+
+=back
 
 =head1 LICENSE
 
