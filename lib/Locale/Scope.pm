@@ -76,6 +76,11 @@ It creates a new Locale::Scope object which rollbacks locale when its DESTROY me
 
 =back
 
+=head1 SEE ALSO
+
+L<POSIX>
+L<Scope::Guard>
+
 =head1 LICENSE
 
 Copyright (C) karupanerura.

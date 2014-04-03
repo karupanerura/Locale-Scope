@@ -38,6 +38,11 @@ Locale::Scope is scope based [setlocale(3)](http://man.he.net/man3/setlocale) fo
 
         my $scope = Locale::Scope->new($category, $locale);
 
+# SEE ALSO
+
+[POSIX](https://metacpan.org/pod/POSIX)
+[Scope::Guard](https://metacpan.org/pod/Scope::Guard)
+
 # LICENSE
 
 Copyright (C) karupanerura.
