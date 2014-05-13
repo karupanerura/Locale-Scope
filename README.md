@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/karupanerura/Locale-Scope.png?branch=master)](https://travis-ci.org/karupanerura/Locale-Scope)
 # NAME
 
 Locale::Scope - scope based [setlocale(3)](http://man.he.net/man3/setlocale)
@@ -21,7 +22,7 @@ Locale::Scope - scope based [setlocale(3)](http://man.he.net/man3/setlocale)
 
 # DESCRIPTION
 
-__THE SOFTWARE IS IT'S IN ALPHA QUALITY. IT MAY CHANGE THE API WITHOUT NOTICE.__
+**THE SOFTWARE IS IT'S IN ALPHA QUALITY. IT MAY CHANGE THE API WITHOUT NOTICE.**
 
 Locale::Scope is scope based [setlocale(3)](http://man.he.net/man3/setlocale) for rollback locale at the end of a scope.
 
