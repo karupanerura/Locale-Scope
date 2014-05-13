@@ -33,7 +33,7 @@ __END__
 
 =head1 NAME
 
-Locale::Scope - scope based L<setlocale(3)>
+Locale::Scope - scope based setlocale(3)
 
 =head1 SYNOPSIS
 

@@ -1,5 +1,5 @@
 {
-   "abstract" : "scope based L<setlocale(3)>",
+   "abstract" : "scope based setlocale(3)",
    "author" : [
       "karupanerura <karupa@cpan.org>"
    ],
