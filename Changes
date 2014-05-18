@@ -2,6 +2,11 @@ Revision history for Perl extension Locale-Scope
 
 {{$NEXT}}
 
+0.03 2014-05-18T22:22:58Z
+
+    - [FIXED] prereqs.
+    - Switch to Module::Build::Tiny
+
 0.02 2014-05-17T01:15:09Z
 
     - [FIXED] 01_locale_scope.t has broken in *BSD.
