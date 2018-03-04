@@ -10,7 +10,7 @@ our @EXPORT_OK = qw/locale_scope/;
 
 use POSIX qw/setlocale/;
 
-sub locale_scope { __PACKAGE__->new(@_) }
+sub locale_scope { unshift @_, __PACKAGE__; goto \&new }
 
 sub new {
     my ($class, $category, $locale) = @_;
