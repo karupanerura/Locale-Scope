@@ -29,6 +29,8 @@ sub DESTROY {
 1;
 __END__
 
+=for stopwords setlocale(3)
+
 =encoding utf-8
 
 =head1 NAME
